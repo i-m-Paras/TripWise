@@ -22,8 +22,8 @@ exports.postAddProduct=(req,res,next)=>{
     const About=req.body.About;
     const AadharNo=req.body.AadharNo;
     const PanNo=req.body.PanNo;
-
-const product=new Product({fname:fname,lname:lname,email:email,password:password,language:language,Age:Age,MobileNo:MobileNo,City:City,State:State,Country:Country,AadharNo:AadharNo,PanNo:PanNo,About:About});
+    var Rating=0;
+const product=new Product({fname:fname,lname:lname,email:email,password:password,language:language,Age:Age,MobileNo:MobileNo,City:City,State:State,Country:Country,AadharNo:AadharNo,PanNo:PanNo,About:About,Rating:Rating});
 
 product.save().then(result=>{
 console.log("Created Product");

@@ -22,8 +22,11 @@ app.use('/static',express.static('static'));
 
 app.use(bodyparser.urlencoded({extended : false}));
 
+app.set('view engine', 'ejs');
+app.set('views','views'); 
 
-app.use(GuiderList);
+
+app.use(GuiderList.route);
 app.use(Login);
 app.use(Register);
 app.use(Profile);

@@ -15,7 +15,8 @@ State: String,
 Country: String,
 PanNo: String,
 AadharNo: Number,
-About: String
+About: String,
+Rating: Number
 });
 
 module.exports=mongoose.model('GuiderData',RegisterSchema);

@@ -8,6 +8,7 @@ route.get('/GuiderRegister',(req,res,next)=>{
     res.sendFile(path.join(__dirname,'../../views/GuiderRegister.html'));
 });
 
+
 route.get('/UserRegister',(req,res,next)=>{
     res.sendFile(path.join(__dirname,'../../views/UserRegister.html'));
 });
