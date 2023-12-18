@@ -28,7 +28,7 @@ Follow these steps to set up the project locally:
 2. Install dependencies:
 
    ```bash
-   cd tour-guider-connector
+   cd TripWise
    npm install
    ```
 
